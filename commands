@@ -1,1 +1,5 @@
 ansible-playbook testbook.yaml   <-- run a playbook
+ansible all -a "whoami"
+ansible -m ping all
+ssh -vvv -i ./default-ec2.pem ec2-user@52.34.238.97
+
