@@ -1,0 +1,10 @@
+---
+- hosts: dev
+  tasks:
+    - name: Execute Shell Commands
+      shell: uname
+      register: uname_result
+- debug: msg="{{uname_result.stdout_lines}}"
+  hosts: qa
+  tasks:
+- debug: msg="Host:qa update complete"
