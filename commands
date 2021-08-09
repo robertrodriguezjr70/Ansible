@@ -4,6 +4,7 @@ ansible all -a "whoami"
 ansible -m ping all
 ansible all -a "uname"
 ansible all -a "python --version"
+ansible <environment> -m setup
 
 ssh -vvv -i ./default-ec2.pem ec2-user@52.34.238.97
 
