@@ -1,0 +1,10 @@
+---
+- hosts: dev
+  become: true    # root
+  tasks:
+    - yum:
+        name:
+          - httpd
+        state: present
+    - service: name=httpd state=started enabled=yes
+    - raw: " echo HTTPD has been installed | sudo tee /var/www/html/index.html"
