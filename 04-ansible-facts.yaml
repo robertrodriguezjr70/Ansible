@@ -1,0 +1,9 @@
+---
+- hosts: dev
+  tasks:
+    - name:
+      debug: msg="{{  ansible_kernel }}"
+    - name:
+      debug: msg="{{ ansible_hostname }}"
+    - name:
+      debug: msg="{{ ansible_distribution }}"
