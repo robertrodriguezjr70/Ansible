@@ -1,5 +1,6 @@
 
 ansible web -i aws.ini -m ping
+ansible-playbook -i aws.ini 01-install-remove-appache.yaml  <-- run playbook with ini file
 
 ansible-playbook testbook.yaml   <-- run a playbook
 ansible-playbook playbooks/01-ping.yml
