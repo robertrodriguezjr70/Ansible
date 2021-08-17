@@ -1,3 +1,4 @@
+# This playbook will call on a role called apache, and run the main.yaml in the task and handler folders
 - hosts: web
   remote_user: root    #set to root
   become: yes
