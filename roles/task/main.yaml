@@ -1,0 +1,17 @@
+---
+- name: Upgrade all packages        # upgrade all packages
+  yum:
+    name: '*'
+    state: latest
+- name: Install Mlocate
+  yum:
+    name: mlocate                   # install mlocate
+    state: installed
+- name: Update Mlocate              # update mlocate via shell
+  ansible.builtin.shell: updatedb
+  args:
+    executable: /bin/bash
+- name: Remove Mlocate               # remove nano
+  yum:
+    name: mlocate                    # remove mlocate
+    state: removed
