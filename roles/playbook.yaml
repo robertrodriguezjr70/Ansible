@@ -1,0 +1,5 @@
+- hosts: web
+  remote_user: root    #set to root
+  become: yes
+  roles:
+    - name: apache
