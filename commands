@@ -7,6 +7,7 @@ ansible-galaxy init <apache/role>                                     <-- create
 ansible-vault encrypt aws.yaml                                        <-- vault encrypt
 ansible-vault view aws.yaml                                           <-- vault decrypt
 andsible-playbook -i aws.yaml --ask-vault-pass  <playbook name>       <-- using vault with playbook
+ansible-vault rekey aws.yaml                                          <-- changing password on vault
 
 
 ansible-playbook testbook.yaml   <-- run a playbook
