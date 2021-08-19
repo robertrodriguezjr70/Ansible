@@ -4,7 +4,8 @@ ansible web -i aws.ini -m ping                                        <-- ping h
 ansible-playbook -i aws.ini -vvvv 01-install-remove-appache.yaml      <-- run playbook with ini file
 ansible-galaxy init <apache/role>                                     <-- create a role 
 
-ansible-vault encrypt aws.yaml                                        <-- vault
+ansible-vault encrypt aws.yaml                                        <-- vault encrypt
+ansible-vault view aws.yaml                                           <-- vault decrypt
 
 ansible-playbook testbook.yaml   <-- run a playbook
 ansible-playbook playbooks/01-ping.yml
