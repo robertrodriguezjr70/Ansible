@@ -6,6 +6,8 @@ ansible-galaxy init <apache/role>                                     <-- create
 
 ansible-vault encrypt aws.yaml                                        <-- vault encrypt
 ansible-vault view aws.yaml                                           <-- vault decrypt
+andsible-playbook -i aws.yaml --ask-vault-pass  <playbook name>       <-- using vault with playbook
+
 
 ansible-playbook testbook.yaml   <-- run a playbook
 ansible-playbook playbooks/01-ping.yml
