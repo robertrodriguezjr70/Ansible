@@ -1,4 +1,10 @@
-https://galaxy.ansible.com/
+https://galaxy.ansible.com/                                                            <-- creating/using roles in Ansible
+
+https://docs.ansible.com/ansible/latest/collections                                    <-- Asure, AWS, Windows, Cisco, Kubernetes
+
+https://docs.ansible.com/ansible/latest/collections/amazon/aws/                        <-- Ansible and AWS
+
+https://docs.ansible.com/ansible/latest/collections/amazon/aws/
 
 https://docs.ansible.com/ansible/2.9/modules/list_of_all_modules.html
 
