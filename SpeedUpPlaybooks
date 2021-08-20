@@ -1,5 +1,10 @@
 ---
 - host: <hostname>
-  gather_facts: no
+  gather_facts: no       <-- will not gather fatchs when playbook is run
   <rest of yaml here>
   
+- host: <hostname>
+  remote_user: root
+  become: yes
+  strategy: free         <-- 
+  <rest of yaml here>
