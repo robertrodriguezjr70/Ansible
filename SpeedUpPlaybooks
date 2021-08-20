@@ -1,0 +1,5 @@
+---
+- host: <hostname>
+  gather_facts: no
+  <rest of yaml here>
+  
