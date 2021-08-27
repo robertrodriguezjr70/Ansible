@@ -2,7 +2,10 @@
 ansible-playbook -e "@input_file_name.yaml" play-book.yaml            <-- read values in from file into script
 ansible web -i aws.ini -m ping                                        <-- ping host under the web group
 ansible-playbook -i aws.ini -vvvv 01-install-remove-appache.yaml      <-- run playbook with ini file
+
 ansible-galaxy init <apache/role>                                     <-- create a role 
+ansible-galaxy install --roles-path . -r <file.yaml>                  <-- installing the roll pulled from repo
+
 
 # Vault
 ansible-vault encrypt aws.yaml                                        <-- vault encrypt
